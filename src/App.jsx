@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import BookList from './components/bookcard';
 
 function App() {
   const books = [
@@ -34,7 +35,9 @@ function App() {
     },
   ];
 
-  return <>{/* write code to display all the books using */}</>;
+  return (<div>
+      <BookList books={books}/>
+      </div>);
 }
 
 export default App;
